@@ -1,0 +1,128 @@
+.container
+{
+    height: 100%;
+    width:55%;
+    background-color: rgb(252, 232, 245);
+   
+    background-size: cover;
+    margin-left: 150px;
+    padding-top: 90px;
+    border-radius: 10px;
+    border:10px solid rgba(253, 214, 232, 0.822);
+    padding-bottom: 20px;
+    color:rgb(74, 69, 63);
+    margin-top: 150px;
+    
+
+}
+body{
+    background-color: rgb(245, 238, 238);
+}
+.button
+{
+     
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      font-style: oblique;
+      font-size: Large;
+      color: rgb(24, 3, 3);
+      
+      cursor: pointer;
+      position: relative;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+}
+    
+    .button:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000f5,
+        
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 1s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    
+    @keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .button:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgb(7, 105, 4);
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }    
+
+.box
+{
+    border-radius: 5px;
+    padding-left: 0px;
+    margin-bottom:13px;
+    margin-left: px;
+    width:450px;
+    
+    border-style:outset;
+    border:5px rgb(255, 168, 226);
+    height: 30px;
+    position:static;
+    
+}
+.submit
+{
+    border-radius: 5px;
+    position:static;
+    border:5px rgb(10, 250, 90);
+
+}
+.font
+{
+   
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.hide
+{
+    display:none;
+}
+.hide1:hover + .hide
+{
+    display: block;
+    
+ 
+}
+.label
+{
+    color:red;
+    
+}
